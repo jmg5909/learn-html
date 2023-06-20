@@ -1,0 +1,54 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    margin: 0;
+}
+strong {
+    color: crimson;
+}
+a { 
+    color: black;
+    text-decoration: none;
+}
+h1 {
+    font-size: 60px;
+    text-align: center;
+    font-style: italic;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    padding: 20px;
+}
+h2 {
+    font-size: 35px;
+}
+.youtube {
+    text-align: center;
+    margin-bottom: 50px;
+}
+#grid ol {
+    border-right: 1px solid gray;
+    width: 100px;
+    margin: 0;
+    padding: 20px;
+    padding-left: 35px;
+    font-size: 20px;
+}
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+#article {
+    padding: 30px;
+}
+@media(max-width:750px) {
+    .youtube {
+        display: none;
+    }
+    #grid {
+    display: block;
+    }
+    #grid ol {
+        border-right: none;
+    }
+}
